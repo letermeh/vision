@@ -50,7 +50,7 @@ class ImageNet(ImageFolder):
             warnings.warn(msg, RuntimeWarning)
 
         root = self.root = os.path.expanduser(root)
-        self.split = verify_str_arg(split, "split", ("train", "val"))
+        self.split = verify_str_arg(split, "split", ("train", "val", "test"))
 
         self.parse_archives()
         wnid_to_classes = load_meta_file(self.root)[0]
