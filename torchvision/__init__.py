@@ -4,7 +4,7 @@ from .extension import _HAS_OPS
 
 from torchvision import models
 from torchvision import datasets
-from torchvision import ops
+#from torchvision import ops
 from torchvision import transforms
 from torchvision import utils
 from torchvision import io
